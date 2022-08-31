@@ -1,0 +1,870 @@
+	success: User registered successfully.
+	success: Customer James Matthews successfully inserted.
+	success: User james@gmail.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = james@gmail.com;
+	success: Successfully fetched the role.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	success: User registered successfully.
+	error: Could not insert employee.
+	success: User roy@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = roy@paintforus.com;
+	success: Successfully fetched the role.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT * FROM sales_order;
+	success: Sales Order history successfully fetched.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT * FROM product;
+	success: Product list successfully fetched.
+<<<<<<< HEAD
+	success: User john@test.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = john@test.com;
+	success: Successfully fetched the role.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT * FROM product;
+	success: Product list successfully fetched.
+	SQL Query: SELECT * FROM customer WHERE c_email = john@test.com;
+	success: Successfully fetched customer.
+	success: Sales Order inserted.
+	SQL Query: SELECT * FROM sales_order;
+	success: Sales Order history successfully fetched.
+	SQL Query: SELECT * FROM product;
+	success: Product list successfully fetched.
+	success: User michaeladmin@paintforus.com logged in successfully.
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	success: Low stock products successfully fetched.
+	success: User im@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = im@paintforus.com;
+	success: Successfully fetched the role.
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	success: Low stock products successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: User im@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = im@paintforus.com;
+	success: Successfully fetched the role.
+=======
+	SQL Query:SELECT c_id FROM customer WHERE c_email='roy@paintforus.com';
+	success: Customer ID successfully fetched.
+	SQL Query:SELECT c_id FROM customer WHERE c_email='roy@paintforus.com';
+	success: Customer ID successfully fetched.
+>>>>>>> 3cd98b15fc4e22e10f5fcff43f58dc78f0d6a8fe
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	success: Low stock products successfully fetched.
+	success: User ia@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = ia@paintforus.com;
+	success: Successfully fetched the role.
+	success: User mt@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = mt@paintforus.com;
+	success: Successfully fetched the role.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Orders successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = mt@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: INSERT INTO raw_material (rm_price,rm_name,cur_rm_stock) VALUES (100,'resin',50);
+	SQL Query: INSERT INTO raw_material (rm_price,rm_name,cur_rm_stock) VALUES (1010,'resin',50);
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	SQL Query: SELECT * FROM customer ORDER BY c_ranking ASC;
+	success: Customers list successfully fetched.
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	success: Low stock products successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Orders successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = mt@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	success: Notification sent successfully by mt@paintforus.com to ia@paintforus.com.
+	success: User mt@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = mt@paintforus.com;
+	success: Successfully fetched the role.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Order list successfully fetched.
+	SQL Query: SELECT * FROM customer ORDER BY c_ranking ASC;
+	success: Customers list successfully fetched.
+	success: Purchase Orders successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = mt@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Orders successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = mt@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: INSERT INTO raw_material (rm_price,rm_name,cur_rm_stock) VALUES (100,'green pigment',50);
+	success: User sd@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = sd@paintforus.com;
+	success: Successfully fetched the role.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials list successfully fetched.
+	SQL Query: SELECT * FROM customer ORDER BY c_ranking ASC;
+	success: Customers list successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Order list successfully fetched.
+	SQL Query: SELECT * FROM ((sales_order AS s INNER JOIN customer c ON s.placed_by=c.c_id) INNER JOIN contain AS con on s.sales_id=con.sales_id) INNER JOIN product AS p ON con.prod_id=p.prod_id GROUP BY s.sales_id, con.prod_id ORDER BY sales_date DESC;
+	success: Sales Orders list successfully fetched.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	success: Low stock products successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity ASC;
+	success: Low Buying Customers list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity DESC;
+	success: Top Customers list successfully fetched.
+	SQL Query: SELECT * FROM production as pro INNER JOIN product as p ON pro.prod_id=p.prod_id ORDER BY pro.mfg_date DESC;
+	success: Production Orders list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity ASC;
+	success: Low Selling Products list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = sd@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	success: Low stock products successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials list successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Order list successfully fetched.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT * FROM ((sales_order AS s INNER JOIN customer c ON s.placed_by=c.c_id) INNER JOIN contain AS con on s.sales_id=con.sales_id) INNER JOIN product AS p ON con.prod_id=p.prod_id GROUP BY s.sales_id, con.prod_id ORDER BY sales_date DESC;
+	success: Sales Orders list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity ASC;
+	success: Low Selling Products list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity DESC;
+	success: Top Customers list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity ASC;
+	success: Low Buying Customers list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity ASC;
+	success: Low Selling Products list successfully fetched.
+	SQL Query: SELECT * FROM production as pro INNER JOIN product as p ON pro.prod_id=p.prod_id ORDER BY pro.mfg_date DESC;
+	success: Production Orders list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = im@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: INSERT INTO product (prod_name,prod_ppu,cur_prod_stock,prod_vol) VALUES ('Brush',10,100,10);
+	success: Product inserted.
+	success: Notification sent successfully by im@paintforus.com to mt@paintforus.com.
+	success: User mt@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = mt@paintforus.com;
+	success: Successfully fetched the role.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Orders successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = mt@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Orders successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = mt@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: INSERT INTO raw_material (rm_price,rm_name,cur_rm_stock) VALUES (13,'Pigments',300);
+	success: User kelly@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = kelly@paintforus.com;
+	success: Successfully fetched the role.
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	success: Low stock products successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity DESC;
+	success: Top Customers list successfully fetched.
+	SQL Query: SELECT * FROM customer ORDER BY c_ranking ASC;
+	success: Customers list successfully fetched.
+	SQL Query: SELECT * FROM customer ORDER BY c_ranking ASC;
+	success: Customers list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity ASC;
+	success: Low Selling Products list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity ASC;
+	success: Low Buying Customers list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity DESC;
+	success: Top Customers list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = roy@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: INSERT INTO product (prod_name,prod_ppu,cur_prod_stock,prod_vol) VALUES ('Soft Brush',5,100,0);
+	success: Product inserted.
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	success: Low stock products successfully fetched.
+	SQL Query: SELECT * FROM production as pro INNER JOIN product as p ON pro.prod_id=p.prod_id ORDER BY pro.mfg_date DESC;
+	success: Production Orders list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = sd@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	success: Notification sent successfully by sd@paintforus.com to mt@paintforus.com.
+	SQL Query: INSERT INTO product (prod_name,prod_ppu,cur_prod_stock,prod_vol) VALUES ('large brush',100,50,0);
+	success: Product inserted.
+	SQL Query: INSERT INTO product (prod_name,prod_ppu,cur_prod_stock,prod_vol) VALUES ('large brush',50,100,0);
+	success: Product inserted.
+	SQL Query: INSERT INTO product (prod_name,prod_ppu,cur_prod_stock,prod_vol) VALUES ('large brush',50,100,0);
+	success: Product inserted.
+	SQL Query: INSERT INTO product (prod_name,prod_ppu,cur_prod_stock,prod_vol) VALUES ('large brush',50,100,0);
+	success: Product inserted.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials list successfully fetched.
+	SQL Query: SELECT * FROM customer ORDER BY c_ranking ASC;
+	success: Customers list successfully fetched.
+	SQL Query: SELECT * FROM ((sales_order AS s INNER JOIN customer c ON s.placed_by=c.c_id) INNER JOIN contain AS con on s.sales_id=con.sales_id) INNER JOIN product AS p ON con.prod_id=p.prod_id GROUP BY s.sales_id, con.prod_id ORDER BY sales_date DESC;
+	success: Sales Orders list successfully fetched.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Order list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity ASC;
+	success: Low Selling Products list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity ASC;
+	success: Low Buying Customers list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity DESC;
+	success: Top Customers list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = roy@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: SELECT * FROM purchase_order WHERE pur_ord_status=0;
+	success: Successfully fetched undelivered purchase orders.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT * FROM sales_order;
+	success: Sales Order history successfully fetched.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT * FROM purchase_order WHERE pur_ord_status=0;
+	success: Successfully fetched undelivered purchase orders.
+	error: joey@paintforus.com is not a valid user.
+	error: joey@paintforus.com is not a valid user.
+	error: james@paintforus.com is not a valid user.
+	success: User registered successfully.
+	success: Employee registered successfully.
+	success: Employee ID successfully fetched.
+	success: Purchasing manager registered sucessfully.
+	success: User r@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = r@paintforus.com;
+	success: Successfully fetched the role.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Orders successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = r@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = r@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity DESC;
+	success: Top Customers list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity ASC;
+	success: Low Buying Customers list successfully fetched.
+	SQL Query: SELECT * FROM production as pro INNER JOIN product as p ON pro.prod_id=p.prod_id ORDER BY pro.mfg_date DESC;
+	success: Production Orders list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = sd@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	success: Low stock products successfully fetched.
+	success: User mt@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = mt@paintforus.com;
+	success: Successfully fetched the role.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Orders successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = mt@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: INSERT INTO raw_material (rm_price,rm_name,cur_rm_stock) VALUES (50,'green pigment',50);
+	success: User sd@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = sd@paintforus.com;
+	success: Successfully fetched the role.
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	success: Low stock products successfully fetched.
+	SQL Query: SELECT * FROM customer ORDER BY c_ranking ASC;
+	success: Customers list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials list successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Order list successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM ((sales_order AS s INNER JOIN customer c ON s.placed_by=c.c_id) INNER JOIN contain AS con on s.sales_id=con.sales_id) INNER JOIN product AS p ON con.prod_id=p.prod_id GROUP BY s.sales_id, con.prod_id ORDER BY sales_date DESC;
+	success: Sales Orders list successfully fetched.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity ASC;
+	success: Low Selling Products list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT * FROM ((sales_order AS s INNER JOIN customer c ON s.placed_by=c.c_id) INNER JOIN contain AS con on s.sales_id=con.sales_id) INNER JOIN product AS p ON con.prod_id=p.prod_id GROUP BY s.sales_id, con.prod_id ORDER BY sales_date DESC;
+	success: Sales Orders list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity ASC;
+	success: Low Buying Customers list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = kelly@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: INSERT INTO product (prod_name,prod_ppu,cur_prod_stock,prod_vol) VALUES ('Roller',12,400,2);
+	success: Product inserted.
+	error: User mt@paintforus.com entered invalid password.
+	error: User mt@paintforus.com entered invalid password.
+	success: User mt@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = mt@paintforus.com;
+	success: Successfully fetched the role.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity ASC;
+	success: Low Buying Customers list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity DESC;
+	success: Top Customers list successfully fetched.
+	SQL Query: SELECT * FROM production as pro INNER JOIN product as p ON pro.prod_id=p.prod_id ORDER BY pro.mfg_date DESC;
+	success: Production Orders list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = sd@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = sd@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	success: User ia@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = ia@paintforus.com;
+	success: Successfully fetched the role.
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	success: Low stock products successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT * FROM ((sales_order AS s INNER JOIN customer c ON s.placed_by=c.c_id) INNER JOIN contain AS con on s.sales_id=con.sales_id) INNER JOIN product AS p ON con.prod_id=p.prod_id GROUP BY s.sales_id, con.prod_id ORDER BY sales_date DESC;
+	success: Sales Orders list successfully fetched.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity ASC;
+	success: Low Selling Products list successfully fetched.
+	SQL Query: SELECT * FROM customer ORDER BY c_ranking ASC;
+	success: Customers list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity DESC;
+	success: Top Customers list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity ASC;
+	success: Low Buying Customers list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = ia@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	success: User mt@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = mt@paintforus.com;
+	success: Successfully fetched the role.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Orders successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Orders successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = mt@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	success: Successfully updated read status of notification.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = mt@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = mt@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: INSERT INTO raw_material (rm_price,rm_name,cur_rm_stock) VALUES (50,'large brush',50);
+	SQL Query: INSERT INTO raw_material (rm_price,rm_name,cur_rm_stock) VALUES (50,'large brush',50);
+	success: Raw Material successfully created.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Orders successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = mt@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	success: User mt@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = mt@paintforus.com;
+	success: Successfully fetched the role.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Orders successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = r@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = mt@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Orders successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = mt@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: INSERT INTO raw_material (rm_price,rm_name,cur_rm_stock) VALUES (20,'green pigment',400);
+	success: Raw Material successfully created.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Orders successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = r@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = r@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Orders successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = r@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: SELECT * FROM purchase_order WHERE pur_ord_status=0;
+	success: Successfully fetched undelivered purchase orders.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Orders successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = r@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: SELECT * FROM purchase_order WHERE pur_ord_status=0;
+	success: Successfully fetched undelivered purchase orders.
+	SQL Query: SELECT * FROM purchase_order WHERE pur_ord_status=0;
+	success: Successfully fetched undelivered purchase orders.
+	SQL Query: SELECT * FROM purchase_order WHERE pur_ord_status=0;
+	success: Successfully fetched undelivered purchase orders.
+	SQL Query: SELECT * FROM purchase_order WHERE pur_ord_status=0;
+	success: Successfully fetched undelivered purchase orders.
+	SQL Query: SELECT * FROM purchase_order WHERE pur_ord_status=0;
+	success: Successfully fetched undelivered purchase orders.
+	SQL Query: UPDATE purchase_order SET pur_ord_status=2 WHERE bill_id=1;
+	success: Successfully cancelled purchase order.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = mt@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	success: User kelly@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = kelly@paintforus.com;
+	success: User ia@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = ia@paintforus.com;
+	success: Successfully fetched the role.
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	success: Low stock products successfully fetched.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT * FROM customer ORDER BY c_ranking ASC;
+	success: Customers list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity ASC;
+	success: Low Selling Products list successfully fetched.
+	SQL Query: SELECT * FROM ((sales_order AS s INNER JOIN customer c ON s.placed_by=c.c_id) INNER JOIN contain AS con on s.sales_id=con.sales_id) INNER JOIN product AS p ON con.prod_id=p.prod_id GROUP BY s.sales_id, con.prod_id ORDER BY sales_date DESC;
+	success: Sales Orders list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity DESC;
+	success: Top Customers list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity ASC;
+	success: Low Buying Customers list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = kelly@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: INSERT INTO product (prod_name,prod_ppu,cur_prod_stock,prod_vol) VALUES ('Test',10,499,12);
+	success: Product inserted.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity ASC;
+	success: Low Selling Products list successfully fetched.
+	SQL Query: SELECT * FROM customer ORDER BY c_ranking ASC;
+	success: Customers list successfully fetched.
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	success: Low stock products successfully fetched.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT * FROM ((sales_order AS s INNER JOIN customer c ON s.placed_by=c.c_id) INNER JOIN contain AS con on s.sales_id=con.sales_id) INNER JOIN product AS p ON con.prod_id=p.prod_id GROUP BY s.sales_id, con.prod_id ORDER BY sales_date DESC;
+	success: Sales Orders list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity DESC;
+	success: Top Customers list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity ASC;
+	success: Low Buying Customers list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = kelly@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	success: Low stock products successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity ASC;
+	success: Low Buying Customers list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity DESC;
+	success: Top Customers list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT * FROM ((sales_order AS s INNER JOIN customer c ON s.placed_by=c.c_id) INNER JOIN contain AS con on s.sales_id=con.sales_id) INNER JOIN product AS p ON con.prod_id=p.prod_id GROUP BY s.sales_id, con.prod_id ORDER BY sales_date DESC;
+	success: Sales Orders list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity ASC;
+	success: Low Selling Products list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = ia@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	success: User sd@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = sd@paintforus.com;
+	success: Successfully fetched the role.
+	SQL Query: SELECT * FROM customer ORDER BY c_ranking ASC;
+	success: Customers list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	success: Low stock products successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Order list successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials list successfully fetched.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT * FROM ((sales_order AS s INNER JOIN customer c ON s.placed_by=c.c_id) INNER JOIN contain AS con on s.sales_id=con.sales_id) INNER JOIN product AS p ON con.prod_id=p.prod_id GROUP BY s.sales_id, con.prod_id ORDER BY sales_date DESC;
+	success: Sales Orders list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity ASC;
+	success: Low Selling Products list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity ASC;
+	success: Low Buying Customers list successfully fetched.
+	SQL Query: SELECT * FROM production as pro INNER JOIN product as p ON pro.prod_id=p.prod_id ORDER BY pro.mfg_date DESC;
+	success: Production Orders list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity DESC;
+	success: Top Customers list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = sd@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	success: Notification sent successfully by sd@paintforus.com to ia@paintforus.com.
+	success: User ia@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = ia@paintforus.com;
+	success: Successfully fetched the role.
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	success: Low stock products successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity ASC;
+	success: Low Selling Products list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT * FROM customer ORDER BY c_ranking ASC;
+	success: Customers list successfully fetched.
+	SQL Query: SELECT * FROM ((sales_order AS s INNER JOIN customer c ON s.placed_by=c.c_id) INNER JOIN contain AS con on s.sales_id=con.sales_id) INNER JOIN product AS p ON con.prod_id=p.prod_id GROUP BY s.sales_id, con.prod_id ORDER BY sales_date DESC;
+	success: Sales Orders list successfully fetched.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity DESC;
+	success: Top Customers list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity ASC;
+	success: Low Buying Customers list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = ia@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	success: Successfully updated read status of notification.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = ia@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT * FROM ((sales_order AS s INNER JOIN customer c ON s.placed_by=c.c_id) INNER JOIN contain AS con on s.sales_id=con.sales_id) INNER JOIN product AS p ON con.prod_id=p.prod_id GROUP BY s.sales_id, con.prod_id ORDER BY sales_date DESC;
+	success: Sales Orders list successfully fetched.
+	SQL Query: SELECT * FROM customer ORDER BY c_ranking ASC;
+	success: Customers list successfully fetched.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	success: Low stock products successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity ASC;
+	success: Low Selling Products list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity DESC;
+	success: Top Customers list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity ASC;
+	success: Low Buying Customers list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = kelly@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: INSERT INTO product (prod_name,prod_ppu,cur_prod_stock,prod_vol) VALUES ('Test1',11,344,11);
+	success: Product inserted.
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	success: Low stock products successfully fetched.
+	SQL Query: SELECT * FROM customer ORDER BY c_ranking ASC;
+	success: Customers list successfully fetched.
+	SQL Query: SELECT * FROM ((sales_order AS s INNER JOIN customer c ON s.placed_by=c.c_id) INNER JOIN contain AS con on s.sales_id=con.sales_id) INNER JOIN product AS p ON con.prod_id=p.prod_id GROUP BY s.sales_id, con.prod_id ORDER BY sales_date DESC;
+	success: Sales Orders list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = ia@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: INSERT INTO product (prod_name,prod_ppu,cur_prod_stock,prod_vol) VALUES ('small brush',50,50,0);
+	success: Product inserted.
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	success: Low stock products successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials list successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Order list successfully fetched.
+	SQL Query: SELECT * FROM customer ORDER BY c_ranking ASC;
+	success: Customers list successfully fetched.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT * FROM ((sales_order AS s INNER JOIN customer c ON s.placed_by=c.c_id) INNER JOIN contain AS con on s.sales_id=con.sales_id) INNER JOIN product AS p ON con.prod_id=p.prod_id GROUP BY s.sales_id, con.prod_id ORDER BY sales_date DESC;
+	success: Sales Orders list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity ASC;
+	success: Low Selling Products list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity DESC;
+	success: Top Customers list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity ASC;
+	success: Low Buying Customers list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = kelly@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: SELECT * FROM production as pro INNER JOIN product as p ON pro.prod_id=p.prod_id ORDER BY pro.mfg_date DESC;
+	success: Production Orders list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = ia@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	success: User ia@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = ia@paintforus.com;
+	success: Successfully fetched the role.
+	select prod_name, prod_vol from product where cur_prod_stock <= 10;
+	success: Low stock products successfully fetched.
+	SQL Query: SELECT * FROM customer ORDER BY c_ranking ASC;
+	success: Customers list successfully fetched.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity ASC;
+	success: Low Selling Products list successfully fetched.
+	SQL Query: SELECT * FROM ((sales_order AS s INNER JOIN customer c ON s.placed_by=c.c_id) INNER JOIN contain AS con on s.sales_id=con.sales_id) INNER JOIN product AS p ON con.prod_id=p.prod_id GROUP BY s.sales_id, con.prod_id ORDER BY sales_date DESC;
+	success: Sales Orders list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity DESC;
+	success: Top Customers list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity ASC;
+	success: Low Buying Customers list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = kelly@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity ASC;
+	success: Low Buying Customers list successfully fetched.
+	SQL Query: SELECT c.c_id, c.c_fname, c.c_lname, SUM(con.qty) as quantity FROM sales_order AS s INNER JOIN contain AS con ON s.sales_id=con.sales_id INNER JOIN customer AS c ON c.c_id=s.placed_by GROUP BY c.c_id, c.c_fname, c.c_lname ORDER BY quantity DESC;
+	success: Top Customers list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = ia@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	success: Notification sent successfully by ia@paintforus.com to sd@paintforus.com.
+	success: User jamesbond@gmail.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = jamesbond@gmail.com;
+	success: Successfully fetched the role.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT * FROM product;
+	success: Product list successfully fetched.
+	SQL Query: SELECT * FROM sales_order;
+	success: Sales Order history successfully fetched.
+	success: User jamesbond@gmail.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = jamesbond@gmail.com;
+	success: Successfully fetched the role.
+	SQL Query: SELECT * FROM product ORDER BY cur_prod_stock;
+	success: Product list successfully fetched.
+	SQL Query: SELECT p.prod_id, p.prod_name, SUM(c.qty) AS quantity FROM product AS p INNER JOIN contain AS c ON p.prod_id=c.prod_id GROUP BY p.prod_id, p.prod_name ORDER BY quantity DESC;
+	success: Top Products successfully fetched.
+	SQL Query: SELECT * FROM product;
+	success: Product list successfully fetched.
+	SQL Query: SELECT * FROM sales_order;
+	success: Sales Order history successfully fetched.
+	SQL Query: SELECT * FROM product;
+	success: Product list successfully fetched.
+	success: User mt@paintforus.com logged in successfully.
+	SQL Query: select emp_des from employee where emp_email = mt@paintforus.com;
+	success: Successfully fetched the role.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Orders successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = mt@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: INSERT INTO raw_material (rm_price,rm_name,cur_rm_stock) VALUES (13,'Resin',345);
+	success: Raw Material successfully created.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Orders successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = r@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: SELECT * FROM purchase_order WHERE pur_ord_status=0;
+	success: Successfully fetched undelivered purchase orders.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = mt@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = mt@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: SELECT * FROM purchase_order WHERE pur_ord_status=0;
+	success: Successfully fetched undelivered purchase orders.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = mt@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: INSERT INTO raw_material (rm_price,rm_name,cur_rm_stock) VALUES (100,'yellow pigment',50);
+	success: Raw Material successfully created.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	SQL Query: SELECT * FROM Vendor AS v INNER JOIN Raw_Material AS rm ON v.rm_id=rm.rm_id;
+	success: Vendors list successfully fetched.
+	SQL Query: SELECT * FROM purchase_order AS p INNER JOIN Vendor AS v ON p.v_id=v.v_id INNER JOIN Raw_Material as r ON v.rm_id=r.rm_id ORDER BY pur_date DESC;
+	success: Purchase Orders successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY rm_id DESC;
+	success: Raw Material list successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = r@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock ASC;
+	success: Scarce Raw Materials successfully fetched.
+	SQL Query: SELECT * FROM Raw_Material ORDER BY cur_rm_stock DESC;
+	success: Abundant Raw Materials successfully fetched.
+	select msg, sent_by, read_status, notif_date, recieved_by from notification where recieved_by in (select emp_id from employee where emp_email = mt@paintforus.com)  ORDER BY read_status;
+	success: Message retrieved succcessfully.
+	SQL Query: SELECT * FROM purchase_order WHERE pur_ord_status=0;
+	success: Successfully fetched undelivered purchase orders.
